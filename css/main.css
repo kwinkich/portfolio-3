@@ -264,16 +264,20 @@ textarea {
 
 .main__info-link {
 	display: inline-block;
+	margin-bottom: 146px;
+}
+
+.link {
 	position: relative;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 500;
 	color: var(--text-color);
-	margin-bottom: 146px;
 	padding-right: 100px;
+
 }
 
-.main__info-link::after {
+.link::after {
 	position: absolute;
 	content: '';
 	top: 50%;
@@ -285,7 +289,7 @@ textarea {
 	transform: translate(0%, -50%);
 }
 
-.main__info-link::before {
+.link::before {
 	position: absolute;
 	content: '';
 	top: 50%;
@@ -408,6 +412,78 @@ textarea {
 	line-height: 140%;
 }
 
+.about {
+	padding-top: 200px;
+}
+
+
+.about__container {
+	position: relative;
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 0px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.about__container::before {
+	position: absolute;
+	content: '';
+	top: 50%;
+	left: 50%;
+	width: 80%;
+	aspect-ratio: 1;
+	background-color: #F2F2F2;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+}
+
+.about__first-col {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.about__info-objects {
+	width: 240px;
+
+}
+
+.about__info-number {
+	font-family: 'Playfair Display', serif;
+	font-size: 74px;
+	color: var(--text-color);
+	margin-bottom: 24px;
+}
+
+.about__info-number-text {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	line-height: 130%;
+	color: #959595;
+}
+
+.about__second-col {
+	max-width: 400px;
+}
+
+.about__subtitle {}
+
+.about__h2 {
+	margin-bottom: 36px;
+}
+
+.about__text-info {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 140%;
+	font-weight: 400;
+	color: #959595;
+	margin-bottom: 60px;
+}
+
 
 @media (max-width: 1160px) {
 	.popular__content {
@@ -444,6 +520,22 @@ textarea {
 	.main__info-bg-img {
 		display: none;
 	}
+
+	.about__container {
+		flex-direction: column;
+		align-items: start;
+	}
+
+	.about__container::before {
+		display: none;
+	}
+
+	.about__first-col {
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 60px;
+	}
 }
 
 @media (max-width: 560px) {
@@ -466,6 +558,17 @@ textarea {
 		grid-row: 6/7;
 		grid-column: 1/2;
 
+	}
+}
+
+@media (max-width: 520px) {
+	.about__first-col {
+		flex-direction: column;
+		/* justify-content: space-between; */
+	}
+
+	.about__info-objects {
+		width: 100%;
 	}
 }
 
