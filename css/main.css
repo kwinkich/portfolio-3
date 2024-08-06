@@ -526,6 +526,31 @@ textarea {
 	flex-wrap: wrap;
 }
 
+.footer {
+	margin-top: 140px;
+	background-color: #F2F2F2;
+}
+
+.footer-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 48px 20px;
+}
+
+.foooter__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+}
+
+.foooter__content a {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	color: var(--text-color);
+}
+
 @media (max-width: 1160px) {
 	.popular__content {
 		flex-direction: column;
