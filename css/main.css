@@ -504,6 +504,28 @@ textarea {
 	margin-bottom: 36px;
 }
 
+.partners {
+	padding-top: 240px;
+}
+
+.partners__container {
+	max-width: 1200px;
+	padding: 0px 20px;
+	margin: 0 auto;
+}
+
+.partners__h2 {
+	margin-bottom: 36px;
+}
+
+.partners__block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 24px;
+	flex-wrap: wrap;
+}
+
 @media (max-width: 1160px) {
 	.popular__content {
 		flex-direction: column;
