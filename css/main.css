@@ -243,8 +243,7 @@ textarea {
 }
 
 
-
-.main__info-subtitle {
+.subtitle {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
@@ -252,6 +251,8 @@ textarea {
 	text-transform: uppercase;
 	margin-bottom: 24px;
 }
+
+.main__info-subtitle {}
 
 .main__info-h1 {
 	font-family: 'Playfair Display', serif;
@@ -318,6 +319,109 @@ textarea {
 	line-height: 140%;
 }
 
+.popular {
+	padding-top: 220px;
+}
+
+.popular__container {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0px 20px;
+}
+
+.popular__head {
+	margin-bottom: 60px;
+}
+
+.popular__head-subtitle {}
+
+.subtitle {}
+
+.popular__head-h2 {}
+
+.h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 40px;
+	font-weight: 400;
+	color: var(--text-color);
+}
+
+.popular__content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.popular__content-ul {
+	display: flex;
+	flex-direction: column;
+	gap: 32px 0px;
+}
+
+.popular__content-li {}
+
+.popular__content-button {
+	background: transparent;
+	border: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.popular__content-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(150px, 270px));
+	grid-template-rows: repeat(3, 155px);
+	gap: 32px;
+}
+
+.popular__content-item {
+	width: 100%;
+	height: 100%;
+}
+
+.popular__content-item img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.grid-item-1 {
+	grid-row: 1 / 4;
+}
+
+.grid-item-2 {
+	grid-row: 1/3;
+	grid-column: 2/4;
+}
+
+.grid-item-3 {
+	grid-row: 3/4;
+	grid-column: 2/4;
+}
+
+.popular__content-item-desc {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	color: var(--text-color);
+	line-height: 140%;
+}
+
+
+@media (max-width: 1160px) {
+	.popular__content {
+		flex-direction: column;
+		gap: 40px 0px;
+	}
+
+	.popular__content-ul {
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 24px;
+	}
+}
+
 @media (max-width: 820px) {
 	.main__links-block {
 		display: none;
@@ -339,6 +443,29 @@ textarea {
 
 	.main__info-bg-img {
 		display: none;
+	}
+}
+
+@media (max-width: 560px) {
+	.popular__content-grid {
+		grid-template-columns: repeat(1, auto);
+		grid-template-rows: repeat(6, 155px);
+	}
+
+	.grid-item-1 {
+		grid-column: 1/2;
+
+	}
+
+	.grid-item-2 {
+		grid-column: 1/2;
+		grid-row: 4/6;
+	}
+
+	.grid-item-3 {
+		grid-row: 6/7;
+		grid-column: 1/2;
+
 	}
 }
 
