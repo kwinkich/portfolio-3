@@ -485,6 +485,25 @@ textarea {
 }
 
 
+.video {
+	padding-top: 240px;
+}
+
+.video__container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0px 20px;
+}
+
+.video__video-block {
+	width: 100%;
+	height: 100%;
+}
+
+.video__text-block {
+	margin-bottom: 36px;
+}
+
 @media (max-width: 1160px) {
 	.popular__content {
 		flex-direction: column;
