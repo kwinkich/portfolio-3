@@ -7,6 +7,25 @@
 		<title>Document</title>
 	</head>
 	<body>
+		<section class="menu-mobile">
+			<nav class="menu-mobile-block">
+				<ul class="menu-mobile-ul">
+					<li class="header__navigation-li">
+						<a href="#popular" class="header__navigation-a">Популярные офисы</a>
+					</li>
+					<li class="header__navigation-li">
+						<a href="#about" class="header__navigation-a">О компании</a>
+					</li>
+					<li class="header__navigation-li">
+						<a href="#video" class="header__navigation-a">Шоурил офисов</a>
+					</li>
+					<li class="header__navigation-li">
+						<a href="#partners" class="header__navigation-a">Партнёры</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+
 		<header class="header">
 			<div class="header__container">
 				<div class="header__logo-block">
@@ -15,16 +34,18 @@
 				<nav class="header__navigation-block">
 					<ul class="header__navigation-ul">
 						<li class="header__navigation-li">
-							<a class="header__navigation-a" href="#">Популярные офисы</a>
+							<a href="#popular" class="header__navigation-a"
+								>Популярные офисы</a
+							>
 						</li>
 						<li class="header__navigation-li">
-							<a href="#" class="header__navigation-a">О компании</a>
+							<a href="#about" class="header__navigation-a">О компании</a>
 						</li>
 						<li class="header__navigation-li">
-							<a href="#" class="header__navigation-a">Шоурил офисов</a>
+							<a href="#video" class="header__navigation-a">Шоурил офисов</a>
 						</li>
 						<li class="header__navigation-li">
-							<a href="#" class="header__navigation-a">Контакты</a>
+							<a href="#partners" class="header__navigation-a">Партнёры</a>
 						</li>
 					</ul>
 				</nav>
@@ -41,21 +62,27 @@
 					<p class="main__link-text">Мы в соцсетях</p>
 					<div class="main__link-line"></div>
 					<div class="main__link-flex">
-						<img
-							class="main__link-img"
-							src="images/iconYoutube.svg"
-							alt="Icon Youtube"
-						/>
-						<img
-							class="main__link-img"
-							src="images/iconYoutube.svg"
-							alt="Icon Youtube"
-						/>
-						<img
-							class="main__link-img"
-							src="images/iconYoutube.svg"
-							alt="Icon Youtube"
-						/>
+						<a href="#">
+							<img
+								class="main__link-img"
+								src="images/iconYoutube.svg"
+								alt="Icon Youtube"
+							/>
+						</a>
+						<a href="#">
+							<img
+								class="main__link-img"
+								src="images/iconYoutube.svg"
+								alt="Icon Youtube"
+							/>
+						</a>
+						<a href="#">
+							<img
+								class="main__link-img"
+								src="images/iconYoutube.svg"
+								alt="Icon Youtube"
+							/>
+						</a>
 					</div>
 				</section>
 				<section class="main__info-block">
@@ -64,7 +91,7 @@
 						Аренда офисов <br />
 						в Нью-Йорке
 					</h1>
-					<a class="main__info-link link" href="#">Перейти в каталог</a>
+					<a class="main__info-link link" href="#popular">Перейти в каталог</a>
 					<article class="main__info-new-block">
 						<p class="main__info-new-title"><strong>Новости</strong></p>
 						<p class="main__info-new-text">
@@ -76,7 +103,7 @@
 				<img class="main__info-bg-img" src="./images/imgbuild.png" alt="" />
 			</div>
 		</main>
-		<section class="popular">
+		<section id="popular" class="popular">
 			<div class="popular__container">
 				<div class="popular__head">
 					<p class="popular__head-subtitle subtitle">АКТУАЛЬНО</p>
@@ -85,7 +112,7 @@
 				<div class="popular__content">
 					<ul class="popular__content-ul">
 						<li class="popular__content-li">
-							<button class="popular__content-button">
+							<button class="popular__content-button active">
 								1155 Avenue of the Americas
 							</button>
 						</li>
@@ -112,10 +139,10 @@
 					</ul>
 					<div class="popular__content-grid">
 						<div class="popular__content-item grid-item-1">
-							<img src="images/img1.png" alt="Project Img" />
+							<img src="images/build1.webp" alt="Project Img" />
 						</div>
 						<div class="popular__content-item grid-item-2">
-							<img src="images/img2.png" alt="Project Img" />
+							<img src="images/inter1.webp" alt="Project Img" />
 						</div>
 						<div class="popular__content-item grid-item-3">
 							<p class="popular__content-item-desc">
@@ -127,7 +154,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="about">
+		<section id="about" class="about">
 			<div class="about__container">
 				<div class="about__first-col">
 					<article class="about__info-objects">
@@ -154,11 +181,11 @@
 						и крупный бизнес с тысячами сотрудников. Поэтому мы можем помочь
 						любой компании, независимо от масштаба.
 					</p>
-					<a class="about__info-link link" href="#">Перейти в каталог</a>
+					<a class="about__info-link link" href="#popular">Перейти в каталог</a>
 				</div>
 			</div>
 		</section>
-		<section class="video">
+		<section id="video" class="video">
 			<div class="video__container">
 				<div class="video__text-block">
 					<p class="video__subtitle subtitle">89 объектов в одном видео</p>
@@ -167,13 +194,14 @@
 				<video
 					poster="./images/placeholder-video.png"
 					class="video__video-block"
+					controls
 					muted
 				>
 					<source src="./video/videoplayback.mp4" type="video/mp4" />
 				</video>
 			</div>
 		</section>
-		<section class="partners">
+		<section id="partners" class="partners">
 			<div class="partners__container">
 				<h2 class="partners__h2 h2">Наши партнёры</h2>
 				<div class="partners__block">
@@ -192,5 +220,7 @@
 				</div>
 			</div>
 		</footer>
+
+		<script src="./scripts/index.js"></script>
 	</body>
 </html>
