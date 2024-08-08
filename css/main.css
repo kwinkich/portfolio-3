@@ -446,6 +446,14 @@ body.overflow-hidden {
 	line-height: 140%;
 }
 
+#grid-content2,
+#grid-content3,
+#grid-content4,
+#grid-content5,
+#grid-content6,
+#grid-content7 {
+	display: none;
+}
 
 /* About */
 .about {

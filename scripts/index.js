@@ -4,6 +4,26 @@ const btnMenu = document.querySelector('.header__button-menu');
 const btnsSwitch = document.querySelectorAll('.popular__content-button');
 const linksNavigationLi = document.querySelectorAll('.header__navigation-li');
 
+const gridItem1 = document.querySelector('#grid-content1');
+const gridItem2 = document.querySelector('#grid-content2');
+const gridItem3 = document.querySelector('#grid-content3');
+const gridItem4 = document.querySelector('#grid-content4');
+const gridItem5 = document.querySelector('#grid-content5');
+const gridItem6 = document.querySelector('#grid-content6');
+const gridItem7 = document.querySelector('#grid-content7');
+
+let prevGrid = gridItem1;
+
+const grids = [
+	gridItem1,
+	gridItem2,
+	gridItem3,
+	gridItem4,
+	gridItem5,
+	gridItem6,
+	gridItem7,
+];
+
 linksNavigationLi.forEach((element) => {
 	element.addEventListener('click', () => {
 		btnMenu.classList.toggle('active');
@@ -11,21 +31,6 @@ linksNavigationLi.forEach((element) => {
 		document.body.classList.toggle('overflow-hidden');
 	});
 });
-
-const renderPopularItem = (count, desc) =>
-	(containerPopularGrid.innerHTML = `
-						<div class="popular__content-item grid-item-1">
-							<img src="images/build${count}.webp" alt="Inter Img" />
-						</div>
-						<div class="popular__content-item grid-item-2">
-							<img src="images/inter${count}.webp" alt="Build Img" />
-						</div>
-						<div class="popular__content-item grid-item-3">
-							<p class="popular__content-item-desc">
-								${desc}
-							</p>
-						</div>
-					`);
 
 btnMenu.addEventListener('click', () => {
 	btnMenu.classList.toggle('active');
@@ -41,11 +46,11 @@ btnsSwitch.forEach((element) => {
 				if (!element.classList.contains('active')) {
 					btnsSwitch.forEach((el) => el.classList.remove('active'));
 					element.classList.toggle('active');
-					renderPopularItem(
-						1,
-						`45-этажный бизнес центр класса А в центре Манхэттена. Доступно
-								более 40 офисов и open space пространств`
-					);
+					if (prevGrid !== gridItem1) {
+						gridItem1.style.display = 'grid';
+						prevGrid.style.display = 'none';
+						prevGrid = gridItem1;
+					}
 				}
 				break;
 			}
@@ -53,11 +58,11 @@ btnsSwitch.forEach((element) => {
 				if (!element.classList.contains('active')) {
 					btnsSwitch.forEach((el) => el.classList.remove('active'));
 					element.classList.toggle('active');
-					renderPopularItem(
-						2,
-						`45-этажный бизнес центр класса А в центре Манхэттена. Доступно
-								более 40 офисов и open space пространств`
-					);
+					if (prevGrid !== gridItem2) {
+						gridItem2.style.display = 'grid';
+						prevGrid.style.display = 'none';
+						prevGrid = gridItem2;
+					}
 				}
 				break;
 			}
@@ -65,11 +70,11 @@ btnsSwitch.forEach((element) => {
 				if (!element.classList.contains('active')) {
 					btnsSwitch.forEach((el) => el.classList.remove('active'));
 					element.classList.toggle('active');
-					renderPopularItem(
-						3,
-						`45-этажный бизнес центр класса А в центре Манхэттена. Доступно
-								более 40 офисов и open space пространств`
-					);
+					if (prevGrid !== gridItem3) {
+						gridItem3.style.display = 'grid';
+						prevGrid.style.display = 'none';
+						prevGrid = gridItem3;
+					}
 				}
 				break;
 			}
@@ -77,11 +82,11 @@ btnsSwitch.forEach((element) => {
 				if (!element.classList.contains('active')) {
 					btnsSwitch.forEach((el) => el.classList.remove('active'));
 					element.classList.toggle('active');
-					renderPopularItem(
-						4,
-						`45-этажный бизнес центр класса А в центре Манхэттена. Доступно
-								более 40 офисов и open space пространств`
-					);
+					if (prevGrid !== gridItem4) {
+						gridItem4.style.display = 'grid';
+						prevGrid.style.display = 'none';
+						prevGrid = gridItem4;
+					}
 				}
 				break;
 			}
@@ -89,11 +94,11 @@ btnsSwitch.forEach((element) => {
 				if (!element.classList.contains('active')) {
 					btnsSwitch.forEach((el) => el.classList.remove('active'));
 					element.classList.toggle('active');
-					renderPopularItem(
-						5,
-						`45-этажный бизнес центр класса А в центре Манхэттена. Доступно
-								более 40 офисов и open space пространств`
-					);
+					if (prevGrid !== gridItem5) {
+						gridItem5.style.display = 'grid';
+						prevGrid.style.display = 'none';
+						prevGrid = gridItem5;
+					}
 				}
 				break;
 			}
@@ -101,11 +106,11 @@ btnsSwitch.forEach((element) => {
 				if (!element.classList.contains('active')) {
 					btnsSwitch.forEach((el) => el.classList.remove('active'));
 					element.classList.toggle('active');
-					renderPopularItem(
-						6,
-						`45-этажный бизнес центр класса А в центре Манхэттена. Доступно
-								более 40 офисов и open space пространств`
-					);
+					if (prevGrid !== gridItem6) {
+						gridItem6.style.display = 'grid';
+						prevGrid.style.display = 'none';
+						prevGrid = gridItem6;
+					}
 				}
 				break;
 			}
@@ -113,11 +118,11 @@ btnsSwitch.forEach((element) => {
 				if (!element.classList.contains('active')) {
 					btnsSwitch.forEach((el) => el.classList.remove('active'));
 					element.classList.toggle('active');
-					renderPopularItem(
-						7,
-						`45-этажный бизнес центр класса А в центре Манхэттена. Доступно
-								более 40 офисов и open space пространств`
-					);
+					if (prevGrid !== gridItem7) {
+						gridItem7.style.display = 'grid';
+						prevGrid.style.display = 'none';
+						prevGrid = gridItem7;
+					}
 				}
 				break;
 			}
